@@ -7,7 +7,6 @@ class University():
         self.id = id
         self.name = name
         self.programs: list[Program]  = []
-        
 
 class Program():
     def __init__(self, id:str, name:str):
