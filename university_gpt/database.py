@@ -60,6 +60,7 @@ class University(DeclarativeBase):
     name = Column(String, nullable=False)
     programs = relationship("Program", backref="university")
 
+
 class Program(DeclarativeBase):
     __tablename__ = 'programs'
     id = mapped_column(Integer, primary_key=True)
